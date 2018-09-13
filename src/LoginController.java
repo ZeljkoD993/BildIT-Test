@@ -58,7 +58,6 @@ public class LoginController extends HttpServlet {
 			
 			
 			HttpSession session = request.getSession();
-			session.invalidate();
 			session.setAttribute("email",email); 
 			response.sendRedirect("profile.jsp");
 			
